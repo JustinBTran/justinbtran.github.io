@@ -2,6 +2,8 @@
 <html>
     <head>
         <link rel="stylesheet" href="css/bootstrap.css" >
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">-->
         <title>WebPortfolio</title>
         <style>
             .side-bar{
@@ -9,21 +11,57 @@
                 background-color: blue;
                 color:white;
                 text-align: center;
-                height: 100%;
             }
             .main-content{
                 text-align: center;
+                position: static;
+                color: black;
+            }
+            
+            .profilePic{
+                border-radius: 50%;
+                width: 170px;
+                margin: 30px;
+                margin-bottom: 40px;
+            }
+            /*.banner{
+                background:
+                linear-gradient(rgba(255,255,255,.25),rgba(255,255,255,.25)), 
+                  url(images/stgeorge.jpg);
+                background-size:100%;
+                padding-top:50px;
+                padding-bottom: 50px;
+                color:white;
+
+            }*/
+            .banner-overlay{
+                opacity:1;
+                position:absolute;
+                filter: brightness(70%);
+                background:
+                linear-gradient(rgba(255,255,255,.25),rgba(255,255,255,.25));
+            } 
+
+            .welcome-text{
+                z-index: 100;
+                /*position:absolute;*/
+                position:relative;
+                color:white;
+                padding: 90px;
+                text-align-last: center;
+
+             
             }
         </style>
            
     </head>
     <body>
-      <div class = "container">
+      <!--<div class = "container">-->
           <!--Side bar-->
         <div class = "row">
           <div class = "col-md-3 side-bar" >
-            <br>
-            <img src = "images/profilePic.png" alt = "Justin" width = 200px>  
+            <img class = "profilePic" src = "images/profilePic.png" alt = "Justin">  
+
             <div class = "author-info">
               <h3 class = "profile-name"> Justin Tran</h3>
               <p class = "profile-description">
@@ -32,16 +70,44 @@
                 justinb.tran@mail.utoronto.ca
               </p>
             </div>
+            <div class = "social-icons">
+                <ul>
+                    <li>
+                        <a href= "https://github.com/JustinBTran" target="_blank">
+                          <i class = "fa fa-user">
+                          </i>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+            
           </div>
           <!--Side bar end-->
-          <div class = "col-9 main-content">
-            <h1 class = "About me"> About Me</h1>
-            <p> I am a student in the Engineering Science program at the University of Toronto in my third year of study.
+          <div class = "col-md-9">
+            <div class="banner" id="top">
+                <div class = "banner-overlay">
+                    <img src = "images/stgeorge.jpg" width = 100%>
+                </div>
+              <div class = "welcome-text">
+                  <h2> Welcome!</h2>
+                  <h5> I am an Student at the University of Toronto in the Engineering Science Program.
+                      I am pursuing a Bacherlors of Applied Science with a Major in Machine Intelligence and Software Engineering.
+                </div>
+            </div>
+            <div class = "main-content">
+              <br>
+              <br>
+              <h4 class = "About me"> About Me</h4>
+              <p> I am a student in the Engineering Science program at the University of Toronto in my third year of study.
                  I am pursuing a major in Machine Intelligence and Software Engineering, as well as a minor in Business.
                  <br>
                  <br>
-                 My current work objective is finding PEY or CO-Op opportunities beginning in Summer 2021, with an interest in software engineering, data science, and finance. </p>
-            
+                 My current work objective is finding PEY or CO-OP opportunities beginning in Summer 2021, with an interest in software engineering, data science, and finance. </p>
+                 <i class = "fa fa-twitter">
+                 
+                </i>
+            </div>
           </div>
         </div>
       </div>
