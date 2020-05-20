@@ -1,0 +1,70 @@
+$menu-color:white;
+
+.side-bar{
+    float:left;
+    background-color: blue;
+    color:$menu-color;
+    text-align: center;
+}
+.main-content{
+    text-align: center;
+    position: static;
+    color: black;
+}
+
+.profilePic{
+    border-radius: 50%;
+    width: 170px;
+    margin: 30px;
+    margin-bottom: 40px;
+}
+/*.banner{
+    background:
+    linear-gradient(rgba(255,255,255,.25),rgba(255,255,255,.25)), 
+      url(images/stgeorge.jpg);
+    background-size:100%;
+    padding-top:50px;
+    padding-bottom: 50px;
+    color:white;
+
+}*/
+.banner-overlay{
+    opacity:1;
+    position:absolute;
+    filter: brightness(70%);
+    background:
+    linear-gradient(rgba(255,255,255,.25),rgba(255,255,255,.25));
+} 
+
+.welcome-text{
+    z-index: 100;
+    /*position:absolute;*/
+    position:relative;
+    color:white;
+    padding: 90px;
+    text-align-last: center;
+
+ 
+}
+
+.fa {
+    color:$menu-color
+}
+
+.social-media{
+    float:right;
+    position:relative;
+    left:-50%;
+    text-align:left;
+}
+
+ul#social-icons {
+    list-style: none;
+    position:relative;
+    left:20%;
+
+}
+
+ul#social-icons li{
+    display:inline;
+}
