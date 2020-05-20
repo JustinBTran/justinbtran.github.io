@@ -47,22 +47,56 @@
 .fa {
   color: white;
 }
-.social-media{
-    float:right;
-    position:relative;
-    left:-50%;
-    text-align:left;
+
+.social-media {
+  float: right;
+  position: relative;
+  left: -50%;
+  text-align: left;
 }
 
 ul#social-icons {
-    list-style: none;
-    position:relative;
-    left:20%;
-
+  list-style: none;
+  position: relative;
+  left: 20%;
 }
 
-ul#social-icons li{
-    display:inline;
+ul#social-icons li {
+  display: inline;
+}
+
+.main-navigation {
+  color: white;
+}
+
+ul#navigation {
+  list-style: none;
+  float: left;
+  text-align: left;
+  color: white;
+  margin-left: 10px;
+  width: 100%;
+}
+ul#navigation .fa {
+  margin-right: 10px;
+}
+
+ul#navigation li {
+  color: white;
+  width: 100%;
+}
+ul#navigation li a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  /*font-size:18px;*/
+}
+ul#navigation li a:hover {
+  background-color: black;
+  transition: 0.5s;
 }
 
 /*# sourceMappingURL=styles.css.map */

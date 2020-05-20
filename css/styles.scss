@@ -48,7 +48,7 @@ $menu-color:white;
 }
 
 .fa {
-    color:$menu-color
+    color:$menu-color;
 }
 
 .social-media{
@@ -67,4 +67,39 @@ ul#social-icons {
 
 ul#social-icons li{
     display:inline;
+}
+
+.main-navigation{
+    color:$menu-color;
+}
+
+ul#navigation{
+    list-style:none;
+    float: left;
+    text-align: left;
+    color:$menu-color;
+    margin-left: 10px;
+    width:100%;
+    .fa{
+        margin-right:10px;
+    }
+    
+}
+ul#navigation li{
+    color:$menu-color;
+    width:100%;
+    a{
+        color:$menu-color;
+        text-decoration: none;
+        text-transform: uppercase;
+        box-sizing: border-box;
+        display: block;
+        width:100%;
+        /*font-size:18px;*/
+    }
+    a:hover{
+        background-color: black;
+        transition:.5s;
+    }
+
 }
