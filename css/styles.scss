@@ -1,19 +1,29 @@
 $menu-color:white;
+$hover-color:#515151;
 
 html, body {
     height: 100%;
   }
+  .col-md-9{
+      padding:0px;
+  }
 .side-bar{
     float:left;
-    background-color: blue;
+    background-color:#003cb3;
     color:$menu-color;
     text-align: center;
     height: 100%;
+    padding:0px;
 }
 .main-content{
     text-align: center;
     position: static;
     color: black;
+    a:hover{
+        color: $hover-color;
+        text-decoration: none;
+
+    }
 }
 
 .profilePic{
@@ -34,9 +44,11 @@ html, body {
 .banner-overlay{
     opacity:1;
     position:absolute;
-    filter: brightness(70%);
+    filter: brightness(40%);
     background:
     linear-gradient(rgba(255,255,255,.25),rgba(255,255,255,.25));
+    padding:0px;
+    margin:0px;
 } 
 
 .welcome-text{
@@ -49,27 +61,49 @@ html, body {
 
  
 }
+.content{
+    margin: auto;
+    width: 80%;
+    height: 100%;
+    border:none;
+    box-sizing: border-box;
+    padding-top: 20px;
 
-.fa {
-    color:$menu-color;
 }
+
 
 .social-media{
     float:right;
     position:relative;
     left:-50%;
     text-align:left;
+    
 }
 
 ul#social-icons {
     list-style: none;
     position:relative;
     left:20%;
+    .fa {
+        color:$menu-color;  
+    }
+    a:hover{
+        transition:0.6s;
+        .fa{
+            color:black;
+        }
+    }
+
+    
 
 }
 
 ul#social-icons li{
     display:inline;
+    a:hover{
+        color:$hover-color;
+
+    }
 }
 
 .main-navigation{
@@ -110,8 +144,9 @@ ul#navigation li{
     }
     a:hover{
         background-color: black;
-        transition:.5s;
+        transition:0.6s;
     }
 
 
 }
+
