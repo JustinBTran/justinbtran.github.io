@@ -32,24 +32,19 @@ html, body {
     margin: 30px;
     margin-bottom: 40px;
 }
-/*.banner{
-    background:
-    linear-gradient(rgba(255,255,255,.25),rgba(255,255,255,.25)), 
-      url(images/stgeorge.jpg);
-    background-size:100%;
-    padding-top:50px;
-    padding-bottom: 50px;
-    color:white;
-}*/
-.banner-overlay{
-    opacity:1;
-    position:absolute;
-    filter: brightness(40%);
-    background:
-    linear-gradient(rgba(255,255,255,.25),rgba(255,255,255,.25));
-    padding:0px;
-    margin:0px;
-} 
+.banner{
+    .banner-overlay{
+        opacity:1;
+        position:absolute;
+        filter: brightness(40%);
+        background:
+        linear-gradient(rgba(255,255,255,.25),rgba(255,255,255,.25));
+        padding:0px;
+        margin:0px;
+    } 
+}
+
+
 
 .welcome-text{
     z-index: 100;
@@ -58,9 +53,10 @@ html, body {
     color:white;
     padding: 90px;
     text-align-last: center;
-
- 
 }
+
+
+
 .content{
     margin: auto;
     width: 80%;
@@ -104,6 +100,15 @@ ul#social-icons li{
         color:$hover-color;
 
     }
+}
+
+@media only screen and (max-width: 767px) {
+    .main-navigation {
+        display: none;
+    }
+    /*.welcome-text{
+        display:none;
+    }*/
 }
 
 .main-navigation{

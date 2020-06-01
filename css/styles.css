@@ -32,16 +32,7 @@ html, body {
   margin-bottom: 40px;
 }
 
-/*.banner{
-    background:
-    linear-gradient(rgba(255,255,255,.25),rgba(255,255,255,.25)), 
-      url(images/stgeorge.jpg);
-    background-size:100%;
-    padding-top:50px;
-    padding-bottom: 50px;
-    color:white;
-}*/
-.banner-overlay {
+.banner .banner-overlay {
   opacity: 1;
   position: absolute;
   filter: brightness(40%);
@@ -97,6 +88,15 @@ ul#social-icons li a:hover {
   color: #515151;
 }
 
+@media only screen and (max-width: 767px) {
+  .main-navigation {
+    display: none;
+  }
+
+  /*.welcome-text{
+      display:none;
+  }*/
+}
 .main-navigation {
   color: white;
   width: 100%;
