@@ -157,11 +157,15 @@
         </div>
       </div>
 
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <script>
-        function toggleNav(){
-          //document.getElementsByClassName("toggle-menu").style.height = "100px";
-          document.querySelector(".toggle-menu").classList.toggle("toggle-menu--open");
-          }
+        //slides menu up and down when icon is clicked
+        $(".toggle-icon").click(function() {
+          $(".toggle-menu").slideToggle("100ms",function() {
+
+          });
+
+        })
 
       </script>
     </body>
