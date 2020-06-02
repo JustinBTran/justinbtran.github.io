@@ -43,8 +43,43 @@
             </div>
             <br>
             <!--social media-->
-
-
+            <!--Toggle Menu-->
+            <a class = "toggle-icon" href = "#" onclick="toggleNav()">
+              <i class = "fa fa-bars"></i>
+            </a>
+            <div class = "toggle-menu">
+              <ul id = "navigation">
+                  <li>
+                      <a href = "index.html">
+                        <i class = "fa fa-home fa-2x"></i>
+                        </i>
+                        Home
+                      </a>
+                  </li>
+                  <li>
+                      <a href= "education.html">
+                        <i class = "fa fa-graduation-cap fa-lg">
+                        </i>
+                        Education
+                      </a>
+                  </li>
+                  <li>
+                    <a href= "https://www.facebook.com/" >
+                      <i class = "fa fa-suitcase fa-lg">
+                      </i>
+                       Experience
+                    </a>
+                </li>
+                  <li>
+                    <a href= "https://www.facebook.com/" >
+                      <i class = "fa fa-folder-open fa-lg">
+                      </i>
+                       Projects
+                    </a>
+                </li>
+              </ul>
+            </div>
+            <!--Toggle Menu end-->
             <!--Navigation menu-->
             <div class = "main-navigation">
                 <ul id = "navigation">
@@ -122,5 +157,12 @@
         </div>
       </div>
 
+      <script>
+        function toggleNav(){
+          //document.getElementsByClassName("toggle-menu").style.height = "100px";
+          document.querySelector(".toggle-menu").classList.toggle("toggle-menu--open");
+          }
+
+      </script>
     </body>
 </html>
