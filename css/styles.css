@@ -24,6 +24,10 @@ html, body {
   color: #515151;
   text-decoration: none;
 }
+.main-content ul {
+  list-style: none;
+  text-align: left;
+}
 
 .profilePic {
   border-radius: 50%;
@@ -52,7 +56,7 @@ html, body {
 
 .content {
   margin: auto;
-  width: 80%;
+  width: 100%;
   height: 100%;
   border: none;
   box-sizing: border-box;
@@ -92,15 +96,19 @@ ul#social-icons li a:hover {
   a {
     display: none;
   }
+
+  .spacer {
+    display: none;
+  }
 }
 @media only screen and (max-width: 767px) {
   .main-navigation {
     display: none;
   }
 
-  /*.welcome-text{
-      display:none;
-  }*/
+  .welcome-text {
+    display: none;
+  }
 }
 .main-navigation {
   color: white;
@@ -162,6 +170,23 @@ ul#navigation li a:hover {
 }
 .toggle-menu--open ul {
   display: block;
+}
+
+.life-item {
+  padding-right: 100px;
+}
+.life-item .life-item-img {
+  float: left;
+}
+.life-item .life-item-img img {
+  width: 60px;
+}
+.life-item .life-item-content {
+  margin-left: 70px;
+}
+.life-item .blue-grey {
+  text-align: right;
+  float: right;
 }
 
 /*# sourceMappingURL=styles.css.map */

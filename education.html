@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="css/bootstrap.min.css" >
+        <link rel="stylesheet" href="css/bootstrap.css" >
         <!--<link rel="stylesheet" href="css/fontawesome.css">-->
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
         <link rel = "stylesheet" href="css/styles.css">
@@ -122,59 +122,47 @@
              <!--Navigation menu-->
           </div>
           <!--Side bar end-->
-          <!--page content-->
           <div class = "col-md-9">
-            <div class="banner" id="top">
-                <div class = "banner-overlay">
-                    <img src = "assets/stgeorge.jpg" width = 100%>
-                </div>
-              <div class = "welcome-text">
-                  <h2> Welcome!</h2>
-                  <h5> I am an Student at the University of Toronto in the Engineering Science Program.
-                      I am pursuing a Bacherlors of Applied Science with a Major in Machine Intelligence and Software Engineering.
-                </div>
-            </div>
-            <div class = "spacer" >
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-            </div>
             <div class = "main-content">
-              <br>
-              <br>
-              <div class = "container content" style = "width: 80%;">
-              <h4 class = "About me"> About Me</h4>
-              <p> I am a student in the Engineering Science program at the University of Toronto in my third year of study.
-                 I am pursuing a major in Machine Intelligence and Software Engineering, as well as a minor in Business.
-                 <br>
-                 <br>
-                 My current work objective is finding PEY or CO-OP opportunities beginning in Summer 2021, with an 
-                 interest in software engineering, data science, and finance. </p>
-                 <p style = text-align:center; >  
-                   <a href = "assets/ResumeJustinTran.pdf" target="_blank">
-                      <i class = "fa fa-file fa-fw"></i>
-                      Resume/CV
-                  </a>
+                <div class = "container content" >
+                  <h2 class="widget-title" style="margin-top: 20px ;">Education</h2>
+                    <ul>
+                      <li>
+                        <div class = "life-item">
+                          <div class = "life-item-img">
+                            <img src ="assets/uoft.png">
+                          </div>
+                          <div class = "life-item-content">
+                            <h6>
+                              <b> 
+                                <span class = "blue-grey"> September 2018 - Present</span>
+                              </b>
+                            </h6>
+                            <h6 class = "life-item-title">
+                              <b>University of Toronto</b>
+                            </h6>
+                            <h6>
+                                Engineering Science - Bachelor of Applied Science (BASc)
+                            </h6>
+                          </div>
+                        </div>    
+                      </li>
+                    </ul>
                 </div>
             </div>
+            </div>
+
+
           </div>
-          <!--page content end-->
-        </div>
-      </div>
-
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-      <script>
-        //slides menu up and down when icon is clicked
-        $(".toggle-icon").click(function() {
-          $(".toggle-menu").slideToggle("100ms",function() {
-
-          });
-
-        })
-
-      </script>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+          <script>
+            //slides menu up and down when icon is clicked
+            $(".toggle-icon").click(function() {
+              $(".toggle-menu").slideToggle("100ms",function() {
+    
+              });
+    
+            })
+    
+          </script>
     </body>
-</html>

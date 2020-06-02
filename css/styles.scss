@@ -1,12 +1,14 @@
 $menu-color:white;
 $hover-color:#515151;
 
+
 html, body {
     height: 100%;
   }
   .col-md-9{
       padding:0px;
   }
+
 .side-bar{
     float:left;
     background-color:#003cb3;
@@ -14,6 +16,7 @@ html, body {
     text-align: center;
     height: 100%;
     padding:0px;
+    
 }
 .main-content{
     text-align: center;
@@ -23,6 +26,10 @@ html, body {
         color: $hover-color;
         text-decoration: none;
 
+    }
+    ul{
+        list-style: none;
+        text-align: left;
     }
 }
 
@@ -59,7 +66,7 @@ html, body {
 
 .content{
     margin: auto;
-    width: 80%;
+    width: 100%;
     height: 100%;
     border:none;
     box-sizing: border-box;
@@ -89,9 +96,6 @@ ul#social-icons {
             color:black;
         }
     }
-
-    
-
 }
 
 ul#social-icons li{
@@ -106,14 +110,17 @@ ul#social-icons li{
     a {
         display: none;
     }
+    .spacer{
+        display:none;
+    }
 }
 @media only screen and (max-width: 767px) {
     .main-navigation {
         display: none;
     }
-    /*.welcome-text{
+    .welcome-text{
         display:none;
-    }*/
+    }
 }
 
 .main-navigation{
@@ -159,6 +166,8 @@ ul#navigation li{
 
 
 }
+
+//CSS for reponsive menu
 .toggle-icon{
     .fa{
         margin-right:0px;
@@ -190,3 +199,21 @@ ul#navigation li{
     }
 }
 
+//CSS for main content lists
+.life-item{
+    padding-right: 100px;
+    .life-item-img{
+        float: left;
+        img{
+        width: 60px;
+        }
+    }
+    .life-item-content{
+        margin-left: 70px;
+    }
+    .blue-grey{
+        text-align: right;
+        float: right;
+    }
+
+}
