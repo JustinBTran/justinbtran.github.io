@@ -4,6 +4,7 @@ $hover-color:#515151;
 
 html, body {
     height: 100%;
+    font-family: Roboto;
   }
   .col-md-9{
       padding:0px;
@@ -106,7 +107,7 @@ ul#social-icons li{
     }
 }
 
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 769px) {
     a {
         display: none;
     }
@@ -114,7 +115,7 @@ ul#social-icons li{
         display:none;
     }
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 769px) {
     .main-navigation {
         display: none;
     }
@@ -122,7 +123,9 @@ ul#social-icons li{
         display:none;
     }
 }
+@font-face { font-family: Roboto; src: url('Roboto/Roboto-Regular.ttf'); } 
 
+//CSS for navigation menu; visible in medium to large windows
 .main-navigation{
     color:$menu-color;
     width:100%;
@@ -199,8 +202,13 @@ ul#navigation li{
     }
 }
 
+.widget-title{
+    margin-bottom: 30px;
+}
+
 //CSS for main content lists
 .life-item{
+    
     padding-right: 100px;
     .life-item-img{
         float: left;
@@ -211,9 +219,30 @@ ul#navigation li{
     .life-item-content{
         margin-left: 70px;
     }
+
+    .life-item-title{
+        margin-bottom: 8px;
+    }
+
+    h6{
+        margin:0px;
+    }
     .blue-grey{
         text-align: right;
         float: right;
     }
+    ul{
+        margin: 0px;
+        padding-left:20px;
+        list-style: disc;
+        font-size: 12px;
+    }
 
+}
+
+.line-seperator{
+    padding-top: 10px;
+    margin-top: 35px;
+    margin-bottom:15px;
+    //margin-bottom: 1000px;
 }
