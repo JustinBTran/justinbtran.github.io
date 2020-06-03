@@ -9,6 +9,9 @@ html, body {
   .col-md-9{
       padding:0px;
   }
+  .col-md-12{
+      padding:0px;
+  }
 
 .side-bar{
     float:left;
@@ -17,16 +20,18 @@ html, body {
     text-align: center;
     height: 100%;
     padding:0px;
-    
+    position: fixed;
+    z-index: 1000;
 }
 .main-content{
+    width: 75.5%;
+    float: right;
     text-align: center;
     position: static;
     color: black;
     a:hover{
         color: $hover-color;
         text-decoration: none;
-
     }
     ul{
         list-style: none;
@@ -41,6 +46,7 @@ html, body {
     margin-bottom: 40px;
 }
 .banner{
+ 
     .banner-overlay{
         opacity:1;
         position:absolute;
@@ -50,9 +56,8 @@ html, body {
         padding:0px;
         margin:0px;
     } 
+
 }
-
-
 
 .welcome-text{
     z-index: 100;
@@ -114,6 +119,10 @@ ul#social-icons li{
     .spacer{
         display:none;
     }
+    .side-bar{
+        overflow-y: scroll;
+    }
+    
 }
 @media only screen and (max-width: 769px) {
     .main-navigation {
@@ -121,6 +130,12 @@ ul#social-icons li{
     }
     .welcome-text{
         display:none;
+    }
+    .side-bar{
+        position: relative;
+    }
+    .main-content{
+        width: 100%;
     }
 }
 @font-face { font-family: Roboto; src: url('Roboto/Roboto-Regular.ttf'); } 

@@ -7,6 +7,10 @@ html, body {
   padding: 0px;
 }
 
+.col-md-12 {
+  padding: 0px;
+}
+
 .side-bar {
   float: left;
   background-color: #003cb3;
@@ -14,9 +18,13 @@ html, body {
   text-align: center;
   height: 100%;
   padding: 0px;
+  position: fixed;
+  z-index: 1000;
 }
 
 .main-content {
+  width: 75.5%;
+  float: right;
   text-align: center;
   position: static;
   color: black;
@@ -101,6 +109,10 @@ ul#social-icons li a:hover {
   .spacer {
     display: none;
   }
+
+  .side-bar {
+    overflow-y: scroll;
+  }
 }
 @media only screen and (max-width: 769px) {
   .main-navigation {
@@ -109,6 +121,14 @@ ul#social-icons li a:hover {
 
   .welcome-text {
     display: none;
+  }
+
+  .side-bar {
+    position: relative;
+  }
+
+  .main-content {
+    width: 100%;
   }
 }
 @font-face {
