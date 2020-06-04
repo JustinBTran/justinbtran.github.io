@@ -77,6 +77,7 @@ html, body {
   position: relative;
   left: -50%;
   text-align: left;
+  height: 40px;
 }
 
 ul#social-icons {
@@ -84,13 +85,13 @@ ul#social-icons {
   position: relative;
   left: 20%;
 }
-ul#social-icons .fa {
+ul#social-icons .fab {
   color: white;
 }
 ul#social-icons a:hover {
   transition: 0.6s;
 }
-ul#social-icons a:hover .fa {
+ul#social-icons a:hover .fab {
   color: black;
 }
 
@@ -102,12 +103,16 @@ ul#social-icons li a:hover {
 }
 
 @media only screen and (min-width: 769px) {
-  a {
+  .toggle-icon {
     display: none;
   }
 
   .spacer {
     display: none;
+  }
+
+  .side-bar {
+    overflow-y: scroll;
   }
 }
 @media only screen and (max-width: 769px) {

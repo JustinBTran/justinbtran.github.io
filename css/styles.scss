@@ -86,6 +86,8 @@ html, body {
     position:relative;
     left:-50%;
     text-align:left;
+    height: 40px;
+
     
 }
 
@@ -93,12 +95,14 @@ ul#social-icons {
     list-style: none;
     position:relative;
     left:20%;
-    .fa {
+    
+
+    .fab {
         color:$menu-color;  
     }
     a:hover{
         transition:0.6s;
-        .fa{
+        .fab{
             color:black;
         }
     }
@@ -113,14 +117,15 @@ ul#social-icons li{
 }
 
 @media only screen and (min-width: 769px) {
-    a {
+    .toggle-icon{
         display: none;
     }
     .spacer{
         display:none;
     }
     .side-bar{
-        //overflow-y: scroll;
+        overflow-y: scroll;
+    
     }
     
 }
