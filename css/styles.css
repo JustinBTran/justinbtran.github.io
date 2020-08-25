@@ -217,6 +217,15 @@ ul#navigation li a:hover {
 .life-item .life-item-title {
   margin-bottom: 8px;
 }
+.life-item .life-item-title .fab {
+  color: black;
+}
+.life-item .life-item-title a:hover {
+  transition: 0.6s;
+}
+.life-item .life-item-title a:hover .fab {
+  color: grey;
+}
 .life-item h6 {
   margin: 0px;
 }

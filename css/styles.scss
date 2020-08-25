@@ -242,6 +242,15 @@ ul#navigation li{
 
     .life-item-title{
         margin-bottom: 8px;
+        .fab{
+            color: black;
+        }
+        a:hover{
+            transition:0.6s;
+            .fab{
+                color:grey;
+            }
+        }
     }
 
     h6{
@@ -266,3 +275,5 @@ ul#navigation li{
     margin-bottom:15px;
     //margin-bottom: 1000px;
 }
+
+//CSS for projects
