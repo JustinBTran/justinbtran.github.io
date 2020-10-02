@@ -15,7 +15,8 @@ html, body {
 
 .side-bar{
     float:left;
-    background-color:#003cb3;
+    //background-color:#003cb3;
+    background-color:  #002b80;
     color:$menu-color;
     text-align: center;
     height: 100%;
@@ -77,6 +78,9 @@ html, body {
     border:none;
     box-sizing: border-box;
     padding-top: 20px;
+    p{
+        text-align: left;
+    }
 
 }
 
