@@ -245,7 +245,7 @@ ul#navigation li{
     }
 
     .life-item-title{
-        margin-bottom: 8px;
+        margin-bottom: 0px;
         .fab{
             color: black;
         }
@@ -265,12 +265,13 @@ ul#navigation li{
         float: right;
     }
     ul{
-        margin: 0px;
+        margin-top: 8px;
+
         padding-left:20px;
         list-style: disc;
         font-size: 12px;
     }
-
+    
 }
 
 .line-seperator{
