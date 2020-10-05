@@ -107,7 +107,7 @@ ul#social-icons {
     a:hover{
         transition:0.6s;
         .fab{
-            color:black;
+            color:$hover-color;
         }
     }
 }

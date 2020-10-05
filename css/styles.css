@@ -95,7 +95,7 @@ ul#social-icons a:hover {
   transition: 0.6s;
 }
 ul#social-icons a:hover .fab {
-  color: black;
+  color: #515151;
 }
 
 ul#social-icons li {
