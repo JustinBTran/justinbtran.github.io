@@ -249,4 +249,46 @@ ul#navigation li a:hover {
   margin-bottom: 15px;
 }
 
+.award-item {
+  padding-right: 100px;
+  margin-bottom: 0px;
+}
+.award-item .award-item-img {
+  float: left;
+}
+.award-item .award-item-img img {
+  width: 60px;
+}
+.award-item .award-item-content {
+  margin-left: 70px;
+}
+.award-item .award-item-title .fab {
+  color: black;
+}
+.award-item .award-item-title a:hover {
+  transition: 0.6s;
+}
+.award-item .award-item-title a:hover .fab {
+  color: grey;
+}
+.award-item .award-organization {
+  margin-bottom: 0px;
+}
+.award-item h6 {
+  margin: 0px;
+}
+.award-item .blue-grey {
+  text-align: right;
+  float: right;
+}
+.award-item ul {
+  margin: 0px;
+  padding-left: 20px;
+  list-style: disc;
+  font-size: 12px;
+}
+.award-item p {
+  font-size: small;
+}
+
 /*# sourceMappingURL=styles.css.map */

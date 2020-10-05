@@ -281,3 +281,54 @@ ul#navigation li{
 }
 
 //CSS for projects
+
+//CSS for awards
+.award-item{
+    
+    padding-right: 100px;
+    margin-bottom: 0px;
+    .award-item-img{
+        float: left;
+        img{
+        width: 60px;
+        }
+    }
+    .award-item-content{
+        margin-left: 70px;
+    }
+
+    .award-item-title{
+        .fab{
+            color: black;
+        }
+        a:hover{
+            transition:0.6s;
+            .fab{
+                color:grey;
+            }
+        }
+    }
+    
+    .award-organization{
+        margin-bottom: 0px;
+    }
+
+    h6{
+        margin:0px;
+    }
+    .blue-grey{
+        text-align: right;
+        float: right;
+    }
+    ul{
+        margin: 0px;
+        padding-left:20px;
+        list-style: disc;
+        font-size: 12px;
+    }
+    p{
+        font-size:small;
+        
+    }
+
+}
